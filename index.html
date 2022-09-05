@@ -4,89 +4,7 @@
         <!-- 這是顯示網頁的title -->
         <meta charset="utf-8">
         <title>健身網站資訊</title>
-        <style>
-            body{
-                background-color: rgb(253,247,240);
-                font-family: sans-serif,微軟正黑體,Arial,新細明體,標楷體;
-            }
-            #container{
-                width:80%;
-                margin:0px auto;
-                text-align: center;
-            }
-            .title{   
-                margin:12px;
-                color:#0d0dbb;
-                background-color: aqua;   
-                font-family: 標楷體;          
-                font-size: 2rem;
-                height: 4rem;
-                line-height: 64px; 
-                border-radius: 0.8rem;  
-                text-align: center;         
-            }            
-
-            .text-1{
-                margin: 6px 0px;
-                padding: 6px;
-                background-color:blanchedalmond;
-                border: 2px solid salmon;
-            }
-            .text-2{
-                background-color: rgb(206,175,235);
-                border-radius: 6px;
-                padding: 6px;
-            }
-            .text-3{
-                color:red;
-                font-size: 24px;
-                font-weight:bolde;
-                font-style: italic;
-            }
-            .sub-title{
-                margin:6px 0px;
-                background-color: rgb(38, 0, 104);
-                color:white;
-                font-size: 1.5rem;
-                border-radius: 10px;
-                padding:6px 12px;
-                font-family: 標楷體;               
-            }
-            ol{
-                text-align: left;
-            }
-            li{
-                margin-left: 24px;
-            }
-            ul a{
-                text-decoration: none;
-            }
-            
-
-            ul a:visited{
-                color:blue;
-            }
-
-            ul a:hover{
-                color:greenyellow;
-            }
-
-            ul a:active{
-                color:red;
-            }
-
-            #image{
-                background-color: burlywood;
-                padding: 6px;
-            }
-
-            #image img{
-                background-color: white;
-               
-                width: 30%;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="container">
@@ -174,7 +92,7 @@
             </small>
             <hr>
             <div class="sub-title">一天所需卡路里</div>
-            <table border="1">
+            <table border="1" id="main-table">
                 <thead>
                     <tr>
                         <th>每天活動量</th>
@@ -205,7 +123,7 @@
                 </tbody>
             </table>
             <br>
-            <p>
+            <p class="text-2 text-4">
                 <a href="./bmi.html">
                     <b>計算BMI:</b>
                 </a>
@@ -216,21 +134,26 @@
             </p>
             <hr>
             <div class="sub-title">>健身影片</div>
-            <!-- <iframe width="45%" height="530"
-            src="https://www.youtube.com/embed/20uf1EcGqjY" title="15
-            分鐘高强度全身肌肉徒手訓練【中級版】 15 Min Full Body No Equipment workout｜
-            無需器材又能在家做的運動｜有效針對全身肌肉的訓練｜男女都適合的訓練【健身運動】" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="45%" height="530"
-            src="https://www.youtube.com/embed/qGf1-usZ0Fk"
-            title="健身一年需要多少【金錢&時間】從瘦子到巨巨 要練多久？│健人心態│ 2021ep20" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <iframe width="45%" height="530"
+                src="https://www.youtube.com/embed/20uf1EcGqjY" title="15
+                分鐘高强度全身肌肉徒手訓練【中級版】 15 Min Full Body No Equipment workout｜
+                無需器材又能在家做的運動｜有效針對全身肌肉的訓練｜男女都適合的訓練【健身運動】" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media;
+                gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="45%" height="530"
+                src="https://www.youtube.com/embed/qGf1-usZ0Fk"
+                title="健身一年需要多少【金錢&時間】從瘦子到巨巨 要練多久？│健人心態│ 2021ep20"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media;
+                gyroscope; picture-in-picture" allowfullscreen></iframe>
             <hr>
             <div class="sub-title">>填寫表單</div>
-            需要更多資訊?免費索取健身資訊<br>
-            <b>前100名還贈送[我愛健身]書籍一本</b>
+            <div class="text-3">
+                需要更多資訊?免費索取健身資訊<br>
+                <b>前100名還贈送[我愛健身]書籍一本</b>
+            </div>
             <form action="">
                 <p>
                     <label for="name">EMAIL</label>
